@@ -1,0 +1,469 @@
+---
+layout: default
+refactor: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit - AI/ML Developer</title>
+    <meta name="description" content="NLP | Generative AI | Full-Stack LLM Development">
+    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * 
+        /* Header */
+        .header {
+            margin-bottom: 48px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #d1d9e0;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: white;
+
+        }
+
+        .wave {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #AFB0B1;
+            margin-bottom: 16px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .intro {
+            font-size: 16px;
+            color: #AFB0B1;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .email {
+            color: #0969da;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+            color: #AFB0B1;
+        }
+
+        .social-link {
+            color: #AFB0B1;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .social-link:hover {
+            color: #ffffff;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+            color: #CCCCCC;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #CCCCCC;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title::before {
+            content: "#";
+            color: #AFB0B1;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+        }
+
+        /* Expertise */
+        .expertise-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            list-style: none;
+        }
+
+        .expertise-item {
+            padding: 16px;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            background: #f6f8fa;
+        }
+
+        .expertise-item strong {
+            display: block;
+            color: #24292f;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .expertise-item span {
+            font-size: 14px;
+            color: #656d76;
+            line-height: 1.5;
+        }
+
+        /* Tech Stack */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 24px;
+        }
+
+        .tech-category {
+            font-size: 14px;
+            color: #afb0b1;
+        }
+
+        .tech-category strong {
+            display: block;
+            color: #afb0b1;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .tech-list {
+            list-style: none;
+            line-height: 1.8;
+        }
+
+        .tech-list li {
+            color: #656d76;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .tech-list li::before {
+            content: "•";
+            color: #0969da;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 8px;
+            background: #f6f8fa;
+            border: 1px solid #d1d9e0;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #24292f;
+            text-decoration: none;
+        }
+
+        .skill-badge img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .skill-badge:hover {
+            background: #e7f3ff;
+            border-color: #0969da;
+        }
+
+        /* Support Section */
+        .support-section {
+            background: #2A2A2E;
+            border: 1px solid #3A3A3E;
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .support-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .support-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            color: #AFB0B1;
+        }
+
+        .support-btn {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+
+        .support-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .support-btn img {
+            height: 36px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #d1d9e0;
+            text-align: center;
+            font-size: 14px;
+            color: #656d76;
+        }
+
+        /* Code-like styling */
+        .code-block {
+            background: #1B1B1E;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            padding: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: #1B1B1E;
+            margin: 16px 0;
+            overflow-x: auto;
+        }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .expertise-list {
+                grid-template-columns: 1fr;
+            }
+
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .support-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                color: #000;
+                background: #fff;
+            }
+            
+            .support-section, .footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1><span class="wave">👋</span>Hi! My name is Mohit</h1>
+        <div class="tagline">NLP | Generative AI | Full-Stack LLM Development | Product Design Enthusiast</div>
+        <div class="intro">
+            I'm a developer passionate about building intelligent, practical applications powered by <strong>Generative AI</strong> and <strong>NLP</strong>. 
+            My work focuses on the entire lifecycle of an AI product, from core model development to user-facing interfaces.
+        </div>
+        <div class="contact-info">
+            <a href="mailto:mohit.iit16@gmail.com" class="email">mohit.iit16@gmail.com</a>
+            <div class="social-links">
+                <a href="https://github.com/mohit-iit16" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/mohitku/" class="social-link">LinkedIn</a>
+                <a href="https://medium.com/@mohit.iit16" class="social-link">Medium</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Experience -->
+    <section class="section">
+        <h2 class="section-title">My Experience</h2>
+        <div class="intro">I have hands-on experience in:</div>
+        <ul class="expertise-list">
+            <li class="expertise-item">
+                <strong>🧠 LLM Fine-Tuning</strong>
+                <span>Adapting foundational models for specialized tasks and improved performance.</span>
+            </li>
+            <li class="expertise-item">
+                <strong>📚 RAG Systems</strong>
+                <span>Architecting and implementing Retrieval-Augmented Generation pipelines for context-aware, factual, and up-to-date responses.</span>
+            </li>
+            <li class="expertise-item">
+                <strong>💻 Full-Stack Design</strong>
+                <span>Building robust backends for model serving and scalable APIs, alongside intuitive frontends for seamless user interaction.</span>
+            </li>
+            <li class="expertise-item">
+                <strong>💾 Database Systems</strong>
+                <span>Managing data flow with both traditional databases and modern vector indexes for efficient semantic search.</span>
+            </li>
+            <li class="expertise-item">
+                <strong>✍️ Prompt Optimization</strong>
+                <span>Designing and refining effective prompts to guide LLM behavior for precision, coherence, and task-specific outputs across diverse applications.</span>
+            </li>
+            <li class="expertise-item">
+                <strong>⚙️ LLM Inferencing</strong>
+                <span>Deploying and scaling language model inference workflows with optimized latency, cost-efficiency, and reliability for production-ready AI solutions.</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section">
+        <h2 class="section-title">🚀 My Go-To Tech Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-category">
+                <strong>GenAI Orchestration:</strong>
+                <ul class="tech-list">
+                    <li>LangChain</li>
+                    <li>LlamaIndex</li>
+                </ul>
+            </div>
+            <div class="tech-category">
+                <strong>LLM Inference & Serving:</strong>
+                <ul class="tech-list">
+                    <li>vLLM</li>
+                    <li>Hugging Face Transformers</li>
+                </ul>
+            </div>
+            <div class="tech-category">
+                <strong>Vector Search:</strong>
+                <ul class="tech-list">
+                    <li>Faiss, Pinecone</li>
+                    <li>ChromaDB, Weaviate</li>
+                </ul>
+            </div>
+            <div class="tech-category">
+                <strong>Backend:</strong>
+                <ul class="tech-list">
+                    <li>Python (FastAPI, Django, Flask)</li>
+                </ul>
+            </div>
+            <div class="tech-category">
+                <strong>Databases:</strong>
+                <ul class="tech-list">
+                    <li>PostgreSQL, MongoDB</li>
+                    <li>Redis, etc.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/pytorch-colored.svg" alt="PyTorch">
+                PyTorch
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" alt="Python">
+                Python
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" alt="Git">
+                Git
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" alt="PostgreSQL">
+                PostgreSQL
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/django-colored.svg" alt="Django">
+                Django
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flask-colored.svg" alt="Flask">
+                Flask
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/fastapi-colored.svg" alt="FastAPI">
+                FastAPI
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/gnubash.svg" alt="Bash">
+                Bash
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" alt="Docker">
+                Docker
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" alt="MongoDB">
+                MongoDB
+            </div>
+            <div class="skill-badge">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" alt="MySQL">
+                MySQL
+            </div>
+        </div>
+    </section>
+
+    <!-- Support -->
+    <section class="section">
+        <div class="support-section">
+            <div class="support-title">Support Me / Hire Me</div>
+            <div class="support-links">
+                <a href="https://buymeacoffee.com/mohit.iit16" class="support-btn">
+                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee">
+                </a>
+                <a href="https://www.upwork.com/freelancers/~011071f7a6a32d7e83" class="support-btn">
+                    <img src="https://img.shields.io/badge/Upwork-6FDA44?style=for-the-badge&logo=upwork&logoColor=white" alt="Upwork">
+                </a>
+                <a href="https://www.fiverr.com/mohitku16" class="support-btn">
+                    <img src="https://img.shields.io/badge/Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white" alt="Fiverr">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
