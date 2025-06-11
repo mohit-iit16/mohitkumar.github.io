@@ -5,7 +5,7 @@
 Welcome to my personal portfolio website! This repository houses the source code and content for my online portfolio, showcasing my skills, projects, and professional experience. The website is built using Jekyll, a static site generator, and hosted on GitHub Pages.
 
   
-<a href="https://mohitkumar.github.io/" target="_blank" rel="noopener noreferrer"><strong>Live</strong></a>
+<a href="https://mohit-iit16.github.io/" target="_blank" rel="noopener noreferrer"><strong>Live</strong></a>
 
 
 
