@@ -35,9 +35,7 @@ title: Publications
 
 ## # [GENWISE: Thematic Discovery from Textual Data](https://aclanthology.org/2024.finnlp-2.8.pdf)
 
-"In this work, we introduce GENWISE - a generative AI-based framework designed to stream-
-line extracting and organizing key information from textual data. Focusing on the preva-
-lent issue in business where significant time is spent on manual data analysis, our framework
+"In this work, we introduce GENWISE - a generative AI-based framework designed to streamline extracting and organizing key information from textual data. Focusing on the prevalent issue in business where significant time is spent on manual data analysis, our framework
 employs cutting-edge generative AI, embedding, and clustering techniques towards a thematic discovery. We further deliver hierarchical
 thematic representations, enhancing the ease
 of understanding for users at different levels.
